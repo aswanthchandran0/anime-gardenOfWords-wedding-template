@@ -1,6 +1,6 @@
 export const invitation = {
-  partnerOne: 'TAKAO',
-  partnerTwo: 'YUKI',
+  partnerOne: 'Ahaana krishna',
+  partnerTwo: 'nimishravi',
   tagline: 'Two Souls · One Journey',
   coverQuote: 'Even in the rain, I found you.',
   families: 'Together with their families',
@@ -78,7 +78,7 @@ schedule: {
   mapHref: 'https://www.google.com/maps/search/',
   // Calendar data (used by the "Add to Calendar" button)
   calendar: {
-    title: 'Wedding Reception — Partner One & Partner Two',
+    title: 'Wedding Reception — Ahaana krishna & nimishravi',
     description: 'Join us for the celebration.',
     location: 'The Garden Pavilion',
     // ISO with explicit offset — start / end in IST
@@ -109,7 +109,7 @@ closing: {
   title: 'With Love',
   message:
     'Thank you for being part of our story. Your presence — near or far — means more to us than words can hold.',
-  signature: 'TAKAO & YUKI',
+  signature: 'Ahaana  & nimishravi',
   // The credit block. Set `href` to your Everloom URL when ready.
   credit: {
     prefix: 'Designed & developed by',

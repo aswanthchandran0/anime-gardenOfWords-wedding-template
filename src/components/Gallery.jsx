@@ -3,12 +3,12 @@ import { invitation as inv } from '../data/invitation.config';
 
 // --- Import your photos here ---
 // Rename these to match the actual files you save in src/assets/
-import g1 from '../assets/gallery-01.jpeg';
-import g2 from '../assets/gallery-02.jpeg';
-import g3 from '../assets/gallery-03.jpeg';
-import g4 from '../assets/gallery-04.jpeg';
-import g5 from '../assets/gallery-05.jpeg';
-import g6 from '../assets/gallery-06.jpeg';
+import g1 from '../assets/replace-gallery-01.jpg';
+import g2 from '../assets/replace-gallery-02.jpg';
+import g3 from '../assets/replace-gallery-03.jpg';
+import g4 from '../assets/replace-gallery-04.jpg';
+import g5 from '../assets/replace-gallery-05.jpg';
+import g6 from '../assets/replace-gallery-06.jpg';
 
 const PHOTOS = [
   { src: g1, alt: 'Moment 1', caption: '' },

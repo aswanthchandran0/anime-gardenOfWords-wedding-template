@@ -1,22 +1,22 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { invitation as inv } from '../data/invitation.config';
-import gardenBg from '../assets/garden-hero-bg.png';
-import memoryImage from '../assets/memory-01.jpg';
-import detailBg from '../assets/details-bg.jpeg';
-import huggingBg from '../assets/hugging.jpeg';
-import hugging2Bg from '../assets/hugging2.jpeg';
-import hugging3Bg from '../assets/hugging3.jpeg';
-import countdownBg from '../assets/countdown-bg.jpeg';
-import celebrationBg from '../assets/celebration-bg.jpeg';
-import scheduleBg from '../assets/schedule-bg1.jpeg'
+import gardenBg from '../assets/replace-garden-hero-bg.jpg';
+import memoryImage from '../assets/replace-garden-hero-bg.jpg';
+import detailBg from '../assets/replace-details-bg.jpg';
+import huggingBg from '../assets/replace-hugging.jpg';
+import hugging2Bg from '../assets/replace-hugging2.jpg';
+import hugging3Bg from '../assets/replace-celebration-bg.jpg';
+import countdownBg from '../assets/replace-countdown-bg.jpeg';
+import celebrationBg from '../assets/replace-hugging3.jpg';
+import scheduleBg from '../assets/replace-schedule-bg.jpg'
 import Countdown from './Countdown';
 import ViewLocationButton from './ViewLocationButton';
 import AddToCalendarButton from './AddToCalendarButton';
-import galleryBg from '../assets/gallery-bg.jpeg';
-import closingBg from '../assets/closing-bg.png'
+import galleryBg from '../assets/replace-gallery-bg.jpg';
+import closingBg from '../assets/replace-closing-bg.jpg'
 import Gallery from './Gallery';
 import VideoSection from './VideoSection';
-import momentVideo from '../assets/videos/moment.mp4'
+import momentVideo from '../assets/videos/replace-moment.mp4'
 
 function AmbientOverlay() {
   return (
