@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* ---- Tailwind v4 theme tokens ---- */
+@theme {
+  --color-mist:    #F7F5EF;
+  --color-forest:  #344B3B;
+  --color-rain:    #34566C;
+  --color-sky:     #AFC7D5;
+  --color-cloud:   #F3F4F1;
+  --color-sun:     #E9D7AC;
+  --color-foliage: #91A78A;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+}
+
+/* ---- Base layer ---- */
+@layer base {
+  html, body { height: 100%; }
+  body {
+    @apply bg-mist text-forest antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* ---- Keyframes ---- */
+@keyframes cloud-drift {
+  from { transform: translate3d(-4%, 0, 0); }
+  to   { transform: translate3d(4%, 0, 0); }
+}
+@keyframes ripple {
+  0%   { transform: scale(.3); opacity: 0; }
+  30%  { opacity: .55; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+@keyframes rain {
+  from { transform: translateY(-10%); opacity: 0; }
+  20%  { opacity: .5; }
+  to   { transform: translateY(110%); opacity: 0; }
+}
+@keyframes sway {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50%      { transform: rotate(1.2deg); }
+}
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); opacity: .5; }
+  50%      { transform: translateY(6px); opacity: 1; }
+}
+
+/* ---- Animation utilities ---- */
+.cloud-drift  { animation: cloud-drift var(--d, 40s) ease-in-out infinite alternate; will-change: transform; }
+.ripple       { transform-box: fill-box; transform-origin: center; animation: ripple 5s ease-out infinite; }
+.rain-streak  { animation: rain 2.4s linear infinite; }
+.sway         { transform-origin: top left; animation: sway 9s ease-in-out infinite; }
+.nudge        { animation: nudge 2.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud-drift, .ripple, .rain-streak, .sway, .nudge { animation: none !important; }
+  * { transition-duration: 0.001ms !important; }
+}
